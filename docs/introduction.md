@@ -4,7 +4,7 @@ You may have heard of the term proxy in another context. In networking, it’s n
 
 The JavaScript `Proxy` is quite similar: it sits between a an object and it’s consumer. In other words, the `Proxy` is wrapped around an object. Any object, I might add. `Object`s, `Array`s, `Function`s, everything that qualifies as a JavaScript object.
 
-When an operation is performed on the JavaScript object, this operation is passed to the `Proxy` and handled. In a proxy handler, a user can choose to pass the operation through. Or not.
+When an operation is performed on the JavaScript object, this operation is passed to the `Proxy` and handled. In a proxy handler, a user can choose what to do with the operation. Pass it through to the intended object, or do something different with it.
 
 ```js
 const myObject = {
